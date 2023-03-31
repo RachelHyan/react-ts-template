@@ -3,7 +3,7 @@ name: CI
 # 在pull request事件中执行CI操作，只有当分支为主分支（即master分支）时才会触发CI流程
 on:
   pull_request:
-    branches: master
+    branches: main
 jobs:
   # 只需要定义一个job并命名为CI
   CI:
