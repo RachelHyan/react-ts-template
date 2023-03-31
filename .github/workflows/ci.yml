@@ -38,7 +38,7 @@ jobs:
       # 安装pnpm
       - name: Installing pnpm
       # 通过命令行安装pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm@7.9.1
       # 安装依赖
       - name: Installing Dependencies
         # 如果缓存标志位没命中，则执行该step。否则就跳过该step
