@@ -12,6 +12,12 @@
     "commit": "git-cz",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "packages/**/src/**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
